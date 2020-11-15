@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane dividerPositions="0.3896321070234114" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="219.0">
+         <children>
+            <TableView layoutX="-2.0" layoutY="-1.0" prefHeight="400.0" prefWidth="229.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="FROM IP" />
+                <TableColumn prefWidth="75.0" text="PORT" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="344.0">
+         <children>
+            <SplitPane dividerPositions="0.8015075376884422" layoutX="2.0" layoutY="1.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="361.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="140.0" prefWidth="158.0">
+                     <children>
+                        <Canvas fx:id="canvas" height="315.0" layoutX="-1.0" width="361.0" />
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <SplitPane dividerPositions="0.3949579831932773" layoutY="-1.0" prefHeight="75.0" prefWidth="359.0">
+                          <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="73.0" prefWidth="112.0">
+                                 <children>
+                                    <Label layoutY="28.0" text="Controller Commands" />
+                                 </children>
+                              </AnchorPane>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="73.0" prefWidth="214.0">
+                                 <children>
+                                     <Label layoutY="23.0" text="" prefHeight="27.0" prefWidth="212.0" />
+                                 </children>
+                              </AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children></AnchorPane>
+  </items>
+</SplitPane>
